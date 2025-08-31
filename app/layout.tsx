@@ -7,6 +7,7 @@ import {
 	SidebarProvider,
 	SidebarTrigger,
 } from "@/components/ui/sidebar";
+import Link from "next/link";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -43,18 +44,18 @@ export default function RootLayout({
 								</div>
 								{/* Navigation links */}
 								<nav className="space-y-2 p-4">
-									<a
+									<Link
 										href="/"
 										className="block px-3 py-2 hover:bg-primary transition-colors text-foreground hover:text-primary-foreground"
 									>
 										Home
-									</a>
-									<a
+									</Link>
+									<Link
 										href="/portfolio"
 										className="block px-3 py-2 hover:bg-primary transition-colors text-foreground hover:text-primary-foreground"
 									>
 										Portfolio
-									</a>
+									</Link>
 								</nav>
 							</SidebarContent>
 						</Sidebar>
